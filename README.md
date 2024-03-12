@@ -4,5 +4,5 @@ What's done:
 - automatic password deletion;
 - pop-up windows of incorrect password or login input;
 - hiding the keyboard when tapping on the screen;
-- Validation of user login data;
-- Transition from one VC to another.
+- validation of user login data;
+- transition from one VC to another.
