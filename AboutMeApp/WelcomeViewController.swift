@@ -9,10 +9,13 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var welcomeLabel: UILabel!
     
+    // MARK: - Public Properties
     var userName: String!
     
+    // MARK: - Private Properties
     private let primaryColor = UIColor(
         red: 18/255,
         green: 64/255,
@@ -26,6 +29,7 @@ final class WelcomeViewController: UIViewController {
         alpha: 1
     )
     
+    // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)

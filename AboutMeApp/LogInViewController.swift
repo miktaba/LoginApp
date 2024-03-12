@@ -15,15 +15,17 @@ final class LogInViewController: UIViewController {
     
     @IBOutlet var logInButton: UIButton!
     
+    // MARK: - Private Properties
     private let user = "User"
     private let password = "Password"
     
+    // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         logInButton.layer.cornerRadius = 5
     }
     
-    // MARK: - overrideFunk
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = user
